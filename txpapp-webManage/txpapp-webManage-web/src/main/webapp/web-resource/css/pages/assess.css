@@ -1,0 +1,87 @@
+﻿/* -------------------------------------------------
+ * 我的一品---商品评价
+ * -------------------------------------------------
+*/
+
+.uc_r .ucr_hd span{font-size: 12px;}
+.assInfo{border: 1px solid #ccc; margin-top: 7px; padding: 6px 12px 8px;}
+.assInfo p{line-height: 16px; color: #b2b2b2;}
+
+.assess{overflow: hidden;}
+.assStar{background-color: #ededed; margin-top: 7px; padding: 12px 15px 3px; overflow: hidden; }
+.assStar .item{overflow: hidden; margin-bottom: 15px;}
+.item .itemTitle{display: inline-block; width: 90px; float: left; font-size: 14px;}
+.item .itemStar{overflow:hidden; width:210px; height:20px; position:relative; background: url(../../images/assess/iconStar.png) no-repeat 0 0; float: left; font-size: 14px;}
+.item .itemStar1 {background-position:0 -20px}
+.item .itemStar2 {background-position:0 -40px}
+.item .itemStar3 {background-position:0 -160px}
+.item .itemStar4 {background-position:0 -180px}
+.item .itemStar5 {background-position:0 -200px}
+.fivestar {background-position:0 -100px}
+.itemStar li {cursor: pointer; float:left; text-indent:-999em;}
+.itemStar li a {position:absolute; left:0; top:0; width:20px; height:20px; text-decoration:none; z-index: 200;}
+.itemStar li.star1 a {left:0;}
+.itemStar li.star2 a {left:30px;}
+.itemStar li.star3 a {left:60px;}
+.itemStar li.star4 a {left:90px;}
+.itemStar li.star5 a {left:120px;}
+.itemStar li a:hover {z-index:2; width:210px; height:20px; overflow:hidden; left:0; background: url(../../images/assess/iconStar.png) no-repeat 0 0;}
+.itemStar li.star1 a:hover {background-position:0 -20px;}
+.itemStar li.star2 a:hover {background-position:0 -40px;}
+.itemStar li.star3 a:hover {background-position:0 -160px}
+.itemStar li.star4 a:hover {background-position:0 -180px}
+.itemStar li.star5 a:hover {background-position:0 -200px}
+.item .itemText{float: left; width: 300px; display: inline-block;}
+
+.assBags{border: 1px solid #ccc; overflow: hidden;}
+.assBag{border-bottom: 1px dashed #b2b2b2; overflow: hidden; margin-bottom: -1px;}
+.assBag .bagInfo{width: 240px; padding: 16px 40px 0 25px; height: 60px;}
+.assBag .bagInfo .img{float: left; margin-right: 10px;}
+.assBag .bagInfo .info{float: left; padding:0px 0; width:114px}
+.assBag .bagInfo .info p{line-height: 22px;}
+.assBag .bagInfo .info p a{color: #1538ac;}
+.assBag .bagInfo .info p span{color: #b2b2b2;}
+.assBag .bagAss{padding: 13px 57px 15px 0; overflow: hidden; width:618px;}
+.bagAss .rank{height: 30px; line-height: 30px; margin-bottom: 10px;}
+.bagAss .rank span{display: inline-block; width: 70px;}
+.bagAss .rank div{display: inline-block;}
+.bagAss .rank div a{display: inline-block; width: 55px; height: 20px; line-height: 20px; text-align: center; color: #fff; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; margin-right: 12px; background-color: #ccc;}
+.bagAss .rank div a:hover{text-decoration: none;}
+.bagAss .rank div a.red{background-color: #f63c30;}
+.bagAss .conSubmit{padding: 15px 0 10px;}
+.bagAss .con{line-height:22px;}
+.bagAss .con textarea{width: 596px; height: 105px; border: 1px solid #ccc; padding: 10px;}
+.bagAss .tag{padding: 7px 0 11px; height: 18px;}
+.bagAss .tag a{display: inline-block; height: 18px; line-height: 18px; padding: 0 10px; margin-right: 5px; background-color: #ccc; color: #fff;}
+.bagAss .tag a:hover{text-decoration: none;}
+.bagAss .tag a.red{background-color: #f63c30;}
+.bagAss .smallPic{padding: 5px 0; height: 45px;}
+.bagAss .smallPic li{float: left; width: 37px; height: 37px; padding: 2px; border: 2px solid #ededed; margin-right: 9px; position:relative;}
+.bagAss .smallPic li img{width: 37px; height: 37px;}
+.bagAss .smallPic li i{display:block; width:11px; height:11px; background:url(../../images/assess/del.png) no-repeat; position:absolute; right:-5px; top:-5px; cursor:pointer;}
+.bagAss .picBtn{width:88px;height:28px; background:url(../../images/assess/upFileBtn.png) no-repeat; overflow:hidden; position:relative;}
+.bagAss .upfile{position:absolute;top:-100px;}
+.bagAss .upFileBtn{width:88px;height:28px;opacity:0;filter:alpha(opacity=0);cursor:pointer;}
+.bagAss .user{text-align:right; padding:3px 0;}
+.bagAss .user input{vertical-align: middle; margin-right: 5px;}
+
+
+/* 追加评论 */
+.assessAdd{overflow: hidden; border: 1px solid #ccc; padding: 0 5px; margin-top: 10px;}
+.assessAdd .addBox{border-bottom: 1px dashed #ccc; overflow: hidden; margin-bottom: -1px; padding: 30px 50px 20px 80px; overflow: hidden;}
+.addBox .addGood{width: 190px; margin-right: 50px;}
+.addBox .addGood .img{display: block; width: 148px; height: 148px; padding: 2px; border: 1px solid #ccc; margin-bottom: 5px;}
+.addBox .addGood .name p{padding: 3px 0 3px 2px;}
+.addBox .addGood .name p a{color: #1339b4;}
+.addBox .addGood .name p span{color: #b0b0b0;}
+.assessAdd .addAss{width: 624px;}
+.addAss .addPre{padding: 5px 0; overflow: hidden;}
+.addAss .addNow .addTitle{width: 75px; height: 22px; line-height: 22px; text-align: center; background-color: #eef8fd; color: #b2b2b2;}
+.addAss .addNow .addCon{background-color: #eef8fd; padding: 3px 3px 0; overflow: hidden;}
+.addAss .addNow .addCon textarea{width: 595px; height: 85px; background-color: #fff; border: 1px solid #ccc; padding: 10px;}
+.addAss .addNow .addCon p{text-align: right; padding: 10px 0;}
+.addAss .addNow .addCon p input{vertical-align: middle; margin-right: 5px;}
+.addAss .addNow .added{border-top: 1px dashed #ccc; padding: 10px 55px 10px 0;}
+.addAss .addNow .added span{color: #b2b2b2;}
+.addAss .addNow .user{text-align:right; padding:3px 0 5px;}
+.addAss .addNow .user input{vertical-align:middle; margin-right:5px;}

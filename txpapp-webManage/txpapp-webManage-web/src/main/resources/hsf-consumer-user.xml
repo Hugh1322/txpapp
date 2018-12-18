@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:hsf="http://www.taobao.com/hsf" xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:util="http://www.springframework.org/schema/util"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-3.0.xsd
+       http://www.taobao.com/hsf
+       http://www.taobao.com/hsf/hsf.xsd"
+	   default-autowire="byName">
+
+	<hsf:consumer id="SysUserServiceConsumer"
+				  interface="com.txp.app.system.service.SysUserService" version="${hsf.service.version}" group="${hsf.service.group}" >
+	</hsf:consumer>
+	<hsf:consumer id="SysRoleServiceConsumer"
+				  interface="com.txp.app.system.service.SysRoleService" version="${hsf.service.version}" group="${hsf.service.group}" >
+	</hsf:consumer>
+	<hsf:consumer id="ManageSeviceConsumer"
+				  interface="com.txp.app.system.service.ManageSevice" version="${hsf.service.version}" group="${hsf.service.group}" >
+	</hsf:consumer>
+	<hsf:consumer id="SysDepartmentServiceConsumer"
+				  interface="com.txp.app.system.service.SysDepartmentService" version="${hsf.service.version}" group="${hsf.service.group}" >
+	</hsf:consumer>
+	<hsf:consumer id="SysRuleServiceConsumer"
+				  interface="com.txp.app.system.service.SysRuleService" version="${hsf.service.version}" group="${hsf.service.group}" >
+	</hsf:consumer>
+	<hsf:consumer id="SysCityServiceConsumer"
+				  interface="com.txp.app.system.service.SysCityService" version="${hsf.service.version}" group="${hsf.service.group}" >
+	</hsf:consumer>
+	<hsf:consumer id="SupplierManageConsumer"
+				  interface="com.txp.app.supplier.service.SupplierManageApi" version="${hsf.service.version}" group="${hsf.service.group}" >
+	</hsf:consumer>
+
+	<hsf:consumer id="TestCheckServiceApiConsumer"
+				  interface="com.txp.app.supplier.service.TestCheckServiceApi" version="${hsf.service.version}" group="${hsf.service.group}" >
+	</hsf:consumer>
+
+</beans>

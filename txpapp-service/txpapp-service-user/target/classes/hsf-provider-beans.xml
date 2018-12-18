@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:hsf="http://www.taobao.com/hsf" xmlns="http://www.springframework.org/schema/beans"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-3.0.xsd
+       http://www.taobao.com/hsf
+       http://www.taobao.com/hsf/hsf.xsd"
+       default-autowire="byName">
+    <!-- 测试 -->
+
+    <hsf:provider id="SysRoleServiceProvider" interface="com.txp.app.system.service.SysRoleService"
+                  ref="sysRoleService" version="${hsf.service.version}" group="${hsf.service.group}" clientTimeout="60000">
+    </hsf:provider>
+
+    <bean id="sysUserService" class="com.txp.app.system.service.SysUserServiceImpl"/>
+    <hsf:provider id="SysUserServiceProvider" interface="com.txp.app.system.service.SysUserService"
+                  ref="sysUserService" version="${hsf.service.version}" group="${hsf.service.group}" clientTimeout="60000">
+    </hsf:provider>
+    <hsf:provider id="ManageSeviceProvider" interface="com.txp.app.system.service.ManageSevice"
+                  ref="manageSevice" version="${hsf.service.version}" group="${hsf.service.group}" clientTimeout="60000">
+    </hsf:provider>
+    <hsf:provider id="SysDepartmentServiceProvider" interface="com.txp.app.system.service.SysDepartmentService"
+                  ref="sysDepartmentService" version="${hsf.service.version}" group="${hsf.service.group}" clientTimeout="60000">
+    </hsf:provider>
+    <hsf:provider id="SysRuleServiceProvider" interface="com.txp.app.system.service.SysRuleService"
+                  ref="sysRuleService" version="${hsf.service.version}" group="${hsf.service.group}" clientTimeout="60000">
+    </hsf:provider>
+    <hsf:provider id="SysCityServiceProvider" interface="com.txp.app.system.service.SysCityService"
+                  ref="sysCityService" version="${hsf.service.version}" group="${hsf.service.group}" clientTimeout="60000">
+    </hsf:provider>
+    <hsf:provider id="SupplierManageApiProvider" interface="com.txp.app.supplier.service.SupplierManageApi"
+                  ref="supplierManageApi" version="${hsf.service.version}" group="${hsf.service.group}" clientTimeout="60000">
+    </hsf:provider>
+
+    <hsf:provider id="TestCheckServiceApiProvider" interface="com.txp.app.supplier.service.TestCheckServiceApi"
+                  ref="testCheckServiceApi" version="${hsf.service.version}" group="${hsf.service.group}" clientTimeout="60000">
+    </hsf:provider>
+    <hsf:provider id="TestServiceApi1Provider" interface="com.txp.app.supplier.service.TestServiceApi"
+                  ref="testServiceApi" version="${hsf.service.version}" group="${hsf.service.group}" clientTimeout="60000">
+    </hsf:provider>
+    <hsf:provider id="TestServiceApi2Provider" interface="com.txp.app.supplier.service.TestServiceApi"
+                  ref="testService2Api" version="${hsf.service.version}" group="${hsf.service.group}" clientTimeout="60000">
+    </hsf:provider>
+    <hsf:provider id="TestServiceApi3Provider" interface="com.txp.app.supplier.service.TestServiceApi"
+                  ref="testService3Api" version="${hsf.service.version}" group="${hsf.service.group}" clientTimeout="60000">
+    </hsf:provider>
+
+
+</beans>
