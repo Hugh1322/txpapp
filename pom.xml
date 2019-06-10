@@ -115,7 +115,10 @@
     <version.hsf.compress>1.7</version.hsf.compress>
     <version.ons.client>1.2.5</version.ons.client>
     <version.junit>4.12</version.junit>
+    <!--
     <version.jackson>2.6.7</version.jackson>
+    -->
+    <version.jackson>2.9.9</version.jackson>
     <version.dom4j>1.6.1</version.dom4j>
     <version.jaxen>1.1.4</version.jaxen>
   </properties>
