@@ -102,7 +102,7 @@
     <version.javax.servlet.jsp.jstl>1.2.1</version.javax.servlet.jsp.jstl>
     <version.disruptor>3.3.4</version.disruptor>
     <version.commons.lang3>3.3.2</version.commons.lang3>
-    <version.commons.beanutils>1.8.3</version.commons.beanutils>
+    <version.commons.beanutils>1.9.2</version.commons.beanutils>
     <version.commons.io>2.4</version.commons.io>
     <version.commons.codec>1.6</version.commons.codec>
     <version.logback>1.0.13</version.logback>
